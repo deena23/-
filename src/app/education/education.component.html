@@ -1,0 +1,28 @@
+<section *ngIf="loading">
+    <loader></loader>
+</section>
+<section class="education-class" *ngIf="!loading">
+    <sidebar></sidebar>
+    <div>
+        <h1 class="h1-6">Education</h1>
+        <div class="card">
+            <p>2017 - 2021</p>
+            <p class="p-2 role">Bachelor of Engineering</p>
+            <p>Computer science and Engineering</p>
+            <p class="p-3">College of Engineering, Guindy (CEG)</p>
+        </div>
+        <div class="card">
+            <p>2015 - 2017</p>
+            <p class="p-2 role">Higher Secondary Certificate Examination (HSC)</p>
+            <p>PER: 89%</p>
+            <p class="p-3">RCT.Hr.sec.school, Chidambaram</p>
+        </div>
+        <div class="card">
+            <p>2010 - 2015</p>
+            <p class="p-2 role">Secondary School Leaving Certificate Examination (SSLC)</p>
+            <p>PER: 96%</p>
+            <p class="p-3">RCT.Hr.sec.school, Chidambaram</p>
+        </div>
+        
+    </div>
+</section>

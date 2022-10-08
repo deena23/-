@@ -1,0 +1,13 @@
+<section *ngIf="loading">
+    <loader></loader>
+</section>
+<section class="resume-class" *ngIf="!loading">
+    <sidebar></sidebar>
+    <div>
+        <h1 class="h1-6">Resume</h1>
+        <button><a href="https://drive.google.com/file/d/1BybcqhLv5DsUOoRNlee0ewEnbIIebLnx/view" target="_blank">Download</a></button>
+        <div>
+            <img src="../../assets/doc/Deenadhayalan_resume.jpg">
+        </div>
+    </div>
+</section>

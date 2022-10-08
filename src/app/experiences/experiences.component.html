@@ -1,0 +1,28 @@
+<section *ngIf="loading">
+    <loader></loader>
+</section>
+<section class="experience-class" *ngIf="!loading">
+    <sidebar></sidebar>
+    <div>
+        <h1 class="h1-6">Experiences</h1>
+        <div class="card">
+            <p>September 2021 - Present</p>
+            <p class="p-2 role">Front-End Developer</p>
+            <p>Angular / Material / Web API</p>
+            <p class="p-3">GAVS Technologies, Chennai</p>
+        </div>
+        <div class="card">
+            <p>Loading...</p>
+        </div>
+        <div class="card">
+            <p>Loading...</p>
+        </div>
+        <div class="card">
+            <p>Loading...</p>
+        </div>
+        <div class="card">
+            <p>Loading...</p>
+        </div>
+        
+    </div>
+</section>

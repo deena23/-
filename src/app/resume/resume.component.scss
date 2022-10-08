@@ -1,0 +1,45 @@
+.resume-class{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 1;
+    display: flex;
+    justify-content: center;
+    div{
+        width: 60vw;
+        overflow-y: scroll;
+        color: var(--primary);
+        background-color: #EAF6F6;
+        padding: 2rem;
+        button{
+            height: 45px;
+            width: 110px;
+            cursor: pointer;
+            background-color: var(--primary);
+            color: #fff;
+            font-size: 20px;
+            font-family: customfont;
+            font-weight: 900;
+            border: none;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+        div{
+            margin-top: 1rem;
+            padding: 0;
+            width: 100%;
+            height: 80%;
+            border: 3px solid var(--primary);
+            img{
+                width: 100%;
+            }
+        }
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+}

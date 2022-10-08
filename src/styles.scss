@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --primary: #1F4690;
+    --secondary: #D8D8D8;
+    --font-pri: #E8AA42;
+}
+@font-face {
+    font-family: customfont;
+    src: url(../src/assets/fonts/MomcakeBold.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+body{
+    // font-family: 'Kdam Thmor Pro', sans-serif;
+    // font-family: 'Roboto', sans-serif;
+    // font-family: 'Source Sans Pro', sans-serif;
+    font-family: customfont;
+}
+.h1-6{
+    font-size: 65px;
+}
+.p-1{
+    font-size: 34px;
+}
+.p-2{
+    font-size: 24px;
+}
+.p-3{
+    font-size: 18px;
+}
+.flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}

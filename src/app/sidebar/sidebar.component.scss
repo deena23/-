@@ -1,0 +1,67 @@
+.side-header{
+    height: 100vh;
+    width: 5vw;
+    background-color: var(--primary);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.2s;
+    h1{
+        writing-mode: vertical-rl;
+        transform: scale(-1,-1);
+        cursor: pointer;
+        margin-top: 2rem;
+        color: #fff;
+        span{
+            color: var(--font-pri);
+        }
+    }
+    &:hover{
+        width: 17vw;
+        .list{
+            visibility: visible;
+        }
+    }
+    .list{
+        position: absolute;
+        top: 0;
+        left: 5rem;
+        visibility: hidden;
+        ul{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            list-style: none;
+            li{
+                cursor: pointer;
+                color: #fff;
+                &:hover{
+                    &::first-letter{
+                        color: var(--font-pri);
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+           
+        }
+    }
+    .menu-icon{
+        position: absolute;
+        bottom: 1rem;
+        left: 0.5rem;
+        color: #fff;
+        display: grid;
+        grid: 2vw / auto auto;
+        gap: 1rem;
+        cursor: pointer;
+        i{
+            &:hover{
+                color: var(--font-pri);
+            }
+        }
+    }
+}

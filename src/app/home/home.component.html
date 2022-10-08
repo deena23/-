@@ -1,0 +1,26 @@
+<section *ngIf="loading">
+    <loader></loader>
+</section>
+<section class="home-class" *ngIf="!loading">
+    <div class="div-top">
+        <h1 class="h1-6">Deenadhayalan <br> <span>Bhackiyam</span></h1>
+        <div class="icons">
+            <p><i class="fa fa-facebook fa-lg"></i></p>
+            <p><i class="fa fa-instagram fa-lg"></i></p>
+            <p><i class="fa fa-github fa-lg"></i></p>
+            <p><i class="fa fa-linkedin fa-lg"></i></p>
+        </div>
+    </div>
+    <div class="div-bottom">
+        <p class="p-1">I'm Front-End Developer</p>
+        <div >
+            <ul class="flex p-2">
+                <li (click)="clk_exp()">Experiences</li>
+                <li (click)="clk_edu()">Education</li>
+                <li (click)="clk_resume()">Resume</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,39 @@
+.experience-class{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 1;
+    display: flex;
+    justify-content: center;
+    div{
+        width: 60vw;
+        overflow-y: scroll;
+        color: var(--primary);
+        background-color: #EAF6F6;
+        padding: 2rem;
+        .card{
+            overflow: hidden;
+            background-color: #fff;
+            width: auto;
+            box-shadow: 3px 5px 3px #EAF6F6 inset;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            margin-bottom: 1rem;
+            border-left: 5px solid var(--primary);
+            transition: transform .2s linear;
+            .role{
+                color: var(--font-pri);
+            }
+            &:hover{
+                transform: scale(1.03);
+            }
+        }
+        
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+}
