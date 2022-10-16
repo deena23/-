@@ -58,6 +58,10 @@
         grid: 2vw / auto auto;
         gap: 1rem;
         cursor: pointer;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
         i{
             &:hover{
                 color: var(--font-pri);

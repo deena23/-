@@ -1,0 +1,22 @@
+<section *ngIf="loading">
+    <loader></loader>
+</section>
+<section class="contact-class" *ngIf="!loading">
+    <sidebar></sidebar>
+    <div>
+        <h1 class="h1-6">Contact</h1>
+        <form [formGroup]="contactform" (ngSubmit)="onSumbit(contactform)">
+            <p>Name</p>
+            <input type="text" formControlName="name">
+            <p>Mail</p>
+            <input type="email" formControlName="mail">
+            <p>Message</p>
+            <textarea formControlName="msg"></textarea>
+            <br>
+            <span class="flex">
+                <button [disabled]="!contactform.valid">Send</button>
+                <small>{{successmsg}}</small>
+            </span>
+        </form>
+    </div>
+</section>
